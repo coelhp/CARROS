@@ -22,7 +22,7 @@ O projeto contempla funcionalidades voltadas à administração e à visualizaç
 
 * **Python** - linguagem de programação.
 * **Django** - framework para desenvolvimento web.
-* **HTML e CSS** — estruturação e estilização das páginas.
+* **HTML e CSS** - estruturação e estilização das páginas.
 * **Django Templates** — renderização dinâmica de páginas HTML.
 * **Django ORM** — interação com o banco de dados.
 * **SQLite ou PostgreSQL** — persistência de dados, conforme o ambiente configurado.
