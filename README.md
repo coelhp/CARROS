@@ -21,7 +21,7 @@ O projeto contempla funcionalidades voltadas à administração e à visualizaç
 ## 🛠️ Tecnologias utilizadas
 
 * **Python** - linguagem de programação.
-* **Django** — framework para desenvolvimento web.
+* **Django** - framework para desenvolvimento web.
 * **HTML e CSS** — estruturação e estilização das páginas.
 * **Django Templates** — renderização dinâmica de páginas HTML.
 * **Django ORM** — interação com o banco de dados.
