@@ -27,7 +27,7 @@ O projeto contempla funcionalidades voltadas à administração e à visualizaç
 * **Django ORM** - interação com o banco de dados.
 * **SQLite ou PostgreSQL** - persistência de dados, conforme o ambiente configurado.
 * **Git e GitHub** - versionamento e hospedagem do código-fonte.
-* **OpenAI API** — integração com inteligência artificial para geração de descrições, quando habilitada.
+* **OpenAI API** - integração com inteligência artificial para geração de descrições, quando habilitada.
 
 ## 📁 Estrutura do projeto
 
