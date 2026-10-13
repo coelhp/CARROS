@@ -1,4 +1,4 @@
-# 🚗 Carros — Sistema de Gestão de Veículos
+# 🚗 Carros - Sistema de Gestão de Veículos
 
 Aplicação web desenvolvida com **Python e Django** durante o curso Django Master, da [PycodeBR](https://pycodebr.com.br/), com o objetivo de implementar um sistema para gerenciamento e divulgação de veículos.
 
