@@ -358,7 +358,7 @@ Como evolução do projeto, algumas melhorias que podem ser consideradas são:
 
 ## 📚 Referências
 
-* [PycodeBR — Django Master](https://pycodebr.com.br/djangomaster-org/)
+* [PycodeBR - Django Master](https://pycodebr.com.br/djangomaster-org/)
 * [Documentação oficial do Django](https://docs.djangoproject.com/)
 * [Documentação oficial do Python](https://docs.python.org/3/)
 * [Documentação oficial do PostgreSQL](https://www.postgresql.org/docs/)
