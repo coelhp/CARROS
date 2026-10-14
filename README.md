@@ -20,7 +20,7 @@ Além dos conceitos fundamentais do desenvolvimento web com Django, o projeto ex
 * [Variáveis de ambiente;](#-variáveis-de-ambiente)
 * [Possíveis melhorias;](#-possíveis-melhorias)
 * [Referências;](#-referências)
-* [Licença](#-licença)
+* [Licença;](#-licença)
 
 ## 🎯 Sobre o projeto:
 
