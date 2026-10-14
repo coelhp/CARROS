@@ -50,25 +50,25 @@ O projeto também serve como aplicação prática para compreender o ciclo de de
 * Associação entre veículos e suas respectivas marcas.
 * Organização dos dados por meio de relacionamentos entre modelos.
 
-### 🔐 Autenticação e controle de acesso
+### 🔐 Autenticação e controle de acesso:
 
 * Registro de usuários.
 * Login e logout.
 * Gerenciamento de sessões.
 * Restrição de acesso a funcionalidades conforme as regras de autenticação e autorização implementadas.
 
-### 📦 Controle de inventário
+### 📦 Controle de inventário:
 
 * Gerenciamento das informações relacionadas ao inventário de veículos.
 * Atualização automática de informações por meio de Django Signals, conforme os eventos definidos na aplicação.
 
-### 🤖 Integração com inteligência artificial
+### 🤖 Integração com inteligência artificial:
 
 * Integração com a API da OpenAI.
 * Possibilidade de geração automática de descrições para os veículos.
 * Utilização de informações dos automóveis para enriquecer sua apresentação na aplicação.
 
-### 🛠️ Interface administrativa
+### 🛠️ Interface administrativa:
 
 * Utilização do Django Admin para gerenciamento dos registros.
 * Configuração dos modelos para facilitar as operações administrativas.
