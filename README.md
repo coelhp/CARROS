@@ -6,7 +6,7 @@ O projeto utiliza os recursos do framework Django para desenvolver uma aplicaç�
 
 Além dos conceitos fundamentais do desenvolvimento web com Django, o projeto explora funcionalidades como gerenciamento de inventário, geração de descrições de veículos com inteligência artificial e integração com PostgreSQL.
 
-## 📋 Sumário
+## 📋 Sumário:
 
 * [Sobre o projeto](#-sobre-o-projeto)
 * [Funcionalidades](#-funcionalidades)
@@ -32,9 +32,9 @@ O desenvolvimento reúne conceitos de programação em Python, orientação a ob
 
 O projeto também serve como aplicação prática para compreender o ciclo de desenvolvimento de um sistema web, desde a modelagem dos dados até a configuração do ambiente e a preparação para publicação em produção.
 
-## ✨ Funcionalidades
+## ✨ Funcionalidades:
 
-### 🚘 Gerenciamento de veículos
+### 🚘 Gerenciamento de veículos:
 
 * Cadastro de veículos.
 * Consulta e listagem dos veículos cadastrados.
