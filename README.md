@@ -76,7 +76,7 @@ O projeto também serve como aplicação prática para compreender o ciclo de de
 
 > **Observação:** a disponibilidade de cada funcionalidade depende da versão do projeto e das implementações presentes no repositório.
 
-## 💻 Tecnologias utilizadas
+## 💻 Tecnologias utilizadas:
 
 | Tecnologia       | Finalidade                                                           |
 | ---------------- | -------------------------------------------------------------------- |
@@ -93,11 +93,11 @@ O projeto também serve como aplicação prática para compreender o ciclo de de
 
 A lista representa as tecnologias associadas ao projeto. A disponibilidade e a configuração de cada dependência devem ser confirmadas nos arquivos do repositório.
 
-## 🧠 Conceitos aplicados
+## 🧠 Conceitos aplicados:
 
 Durante o desenvolvimento, são explorados conceitos importantes para a construção de aplicações web com Django.
 
-**Programação em Python**
+**Programação em Python:**
 
 * Funções, estruturas de controle e coleções.
 * Programação orientada a objetos.
@@ -129,7 +129,7 @@ Durante o desenvolvimento, são explorados conceitos importantes para a constru�
 * Configuração de banco de dados relacional.
 * Preparação para implantação em ambiente de produção.
 
-## ⚙️ Pré-requisitos
+## ⚙️ Pré-requisitos:
 
 Antes de executar o projeto, verifique se o ambiente possui:
 
