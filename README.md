@@ -44,7 +44,7 @@ O projeto também serve como aplicação prática para compreender o ciclo de de
 * Armazenamento e exibição de imagens.
 * Filtragem e ordenação de resultados.
 
-### 🏷️ Gerenciamento de marcas
+### 🏷️ Gerenciamento de marcas:
 
 * Cadastro e manutenção de marcas.
 * Associação entre veículos e suas respectivas marcas.
