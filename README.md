@@ -18,8 +18,8 @@ Além dos conceitos fundamentais do desenvolvimento web com Django, o projeto ex
 * [Estrutura do projeto;](#-estrutura-do-projeto)
 * [Banco de dados;](#-banco-de-dados)
 * [Variáveis de ambiente;](#-variáveis-de-ambiente)
-* [Possíveis melhorias](#-possíveis-melhorias)
-* [Referências](#-referências)
+* [Possíveis melhorias;](#-possíveis-melhorias)
+* [Referências;](#-referências)
 * [Licença](#-licença)
 
 ## 🎯 Sobre o projeto:
