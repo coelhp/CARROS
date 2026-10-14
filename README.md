@@ -8,9 +8,9 @@ Além dos conceitos fundamentais do desenvolvimento web com Django, o projeto ex
 
 ## 📋 Sumário:
 
-* [Sobre o projeto](#-sobre-o-projeto)
-* [Funcionalidades](#-funcionalidades)
-* [Tecnologias utilizadas](#-tecnologias-utilizadas)
+* [Sobre o projeto;](#-sobre-o-projeto)
+* [Funcionalidades;](#-funcionalidades)
+* [Tecnologias utilizadas;](#-tecnologias-utilizadas)
 * [Conceitos aplicados](#-conceitos-aplicados)
 * [Pré-requisitos](#-pré-requisitos)
 * [Instalação e configuração](#-instalação-e-configuração)
