@@ -103,7 +103,7 @@ Durante o desenvolvimento, são explorados conceitos importantes para a constru�
 * Programação orientada a objetos.
 * Organização e reutilização de código.
 
-**Desenvolvimento web com Django**
+**Desenvolvimento web com Django:**
 
 * Arquitetura MVT (*Model-View-Template*).
 * Rotas e resolução de URLs.
@@ -112,7 +112,7 @@ Durante o desenvolvimento, são explorados conceitos importantes para a constru�
 * Formulários e validação de dados.
 * Autenticação e autorização.
 
-**Modelagem e persistência de dados**
+**Modelagem e persistência de dados:**
 
 * Criação de modelos.
 * Relacionamentos entre entidades.
@@ -120,7 +120,7 @@ Durante o desenvolvimento, são explorados conceitos importantes para a constru�
 * Consultas com Django ORM.
 * Operações CRUD (*Create, Read, Update, Delete*).
 
-**Recursos avançados**
+**Recursos avançados:**
 
 * Class-Based Views (CBVs).
 * Django Signals.
@@ -142,7 +142,7 @@ Antes de executar o projeto, verifique se o ambiente possui:
 
 **Importante:** consulte o arquivo `requirements.txt` e as configurações do projeto para identificar as versões efetivamente utilizadas.
 
-## 🚀 Instalação e configuração
+## 🚀 Instalação e configuração:
 
 ### 1. Clone o repositório
 
@@ -231,7 +231,7 @@ python manage.py createsuperuser
 
 Siga as instruções exibidas no terminal para cadastrar as credenciais.
 
-## ▶️ Executando o projeto
+## ▶️ Executando o projeto:
 
 Após concluir a configuração, inicie o servidor de desenvolvimento:
 
@@ -253,7 +253,7 @@ Para interromper o servidor, pressione `Ctrl + C` no terminal.
 
 > O servidor iniciado pelo comando `runserver` é destinado ao desenvolvimento. Para disponibilizar a aplicação publicamente, utilize uma configuração apropriada para produção.
 
-## 📁 Estrutura do projeto
+## 📁 Estrutura do projeto:
 
 A estrutura abaixo é ilustrativa e deve ser ajustada para refletir os diretórios e arquivos efetivamente existentes no repositório.
 
@@ -299,7 +299,7 @@ carros/
 
 Os nomes entre sinais de `<` e `>` são marcadores ilustrativos, não diretórios que necessariamente existam no repositório.
 
-## 🗄️ Banco de dados
+## 🗄️ Banco de dados:
 
 O projeto contempla o uso de banco de dados relacional para persistir as informações de marcas e veículos.
 
@@ -309,7 +309,7 @@ No ambiente configurado com PostgreSQL, o banco de dados é responsável por arm
 
 As configurações de conexão devem ser definidas de acordo com o ambiente de execução, evitando a exposição de credenciais no código-fonte.
 
-## 🔑 Variáveis de ambiente
+## 🔑 Variáveis de ambiente:
 
 Para facilitar a configuração e aumentar a segurança, recomenda-se manter os parâmetros sensíveis fora do código-fonte.
 
@@ -341,7 +341,7 @@ Caso o projeto não implemente a leitura de variáveis de ambiente, será necess
 * Restrinja o acesso às credenciais do banco de dados.
 * Armazene a chave da OpenAI em uma variável de ambiente e evite registrá-la em logs.
 
-## 🔧 Possíveis melhorias
+## 🔧 Possíveis melhorias:
 
 Como evolução do projeto, algumas melhorias que podem ser consideradas são:
 
@@ -356,7 +356,7 @@ Como evolução do projeto, algumas melhorias que podem ser consideradas são:
 * Preparação de uma configuração de produção com servidor de aplicação e servidor web.
 * Monitoramento de erros e registro estruturado de eventos.
 
-## 📚 Referências
+## 📚 Referências:
 
 * [PycodeBR - Django Master](https://pycodebr.com.br/djangomaster-org/)
 * [Documentação oficial do Django](https://docs.djangoproject.com/)
@@ -364,7 +364,7 @@ Como evolução do projeto, algumas melhorias que podem ser consideradas são:
 * [Documentação oficial do PostgreSQL](https://www.postgresql.org/docs/)
 * [Documentação da API da OpenAI](https://platform.openai.com/docs/)
 
-## 📄 Licença
+## 📄 Licença:
 
 Este repositório foi desenvolvido no contexto de aprendizado do curso Django Master, da PycodeBR.
 
