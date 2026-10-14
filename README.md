@@ -22,7 +22,7 @@ Além dos conceitos fundamentais do desenvolvimento web com Django, o projeto ex
 * [Referências](#-referências)
 * [Licença](#-licença)
 
-## 🎯 Sobre o projeto
+## 🎯 Sobre o projeto:
 
 O **Carros** é um sistema web voltado ao gerenciamento de veículos, desenvolvido como projeto prático de aprendizado do framework Django.
 
