@@ -237,21 +237,25 @@ Projeto: configuração geral do sistema;
 Aplicação: módulo responsável por uma funcionalidade específica.
 Por exemplo, em um sistema de filmes, você poderia ter aplicações como:
 
-filmes;
-usuarios;
-vendas;
-relatorios.
-Resumindo
-Arquivo ou pasta	Responsabilidade
-manage.py	Executar comandos do Django
-settings.py	Configurações do projeto
-urls.py	Rotas principais
-asgi.py	Entrada para servidores ASGI
-wsgi.py	Entrada para servidores WSGI
-__init__.py	Identifica um pacote Python
-db.sqlite3	Banco SQLite criado após as migrações
-migrations/	Histórico das alterações do banco
-models.py	Estrutura dos dados
-views.py	Regras e respostas das requisições
-admin.py	Configuração do painel administrativo
+-    filmes;
+-    usuarios;
+-    vendas;
+-    relatorios.
+-    
+## Resumindo
+
+|Arquivo ou pasta |	Responsabilidade|
+|---|---|
+|manage.py|Executar comandos do Django|
+|settings.py|Configurações do projeto|
+|urls.py|Rotas principais|
+|asgi.py|Entrada para servidores ASGI|
+|wsgi.py|Entrada para servidores WSGI|
+|__init__.py|Identifica um pacote Python|
+|db.sqlite3|Banco SQLite criado após as migrações|
+|migrations/|Histórico das alterações do banco|
+|models.py|Estrutura dos dados|
+views.py|Regras e respostas das requisições|
+admin.py|Configuração do painel administrativo|
+
 Essa é a estrutura base criada nas aulas iniciais do curso. Depois, as aplicações começam a organizar as funcionalidades reais do sistema.
