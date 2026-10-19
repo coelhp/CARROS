@@ -241,7 +241,7 @@ Por exemplo, em um sistema de filmes, você poderia ter aplicações como:
 -    usuarios;
 -    vendas;
 -    relatorios.
--    
+
 ## Resumindo
 
 |Arquivo ou pasta |	Responsabilidade|
