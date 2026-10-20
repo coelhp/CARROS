@@ -105,11 +105,13 @@ Aqui entra um ponto importante do material do curso: o Django já traz muita coi
 
 Por isso, o Django já possui models e tabelas internas para recursos como:
 
-usuários;
-grupos;
-permissões;
-sessões;
-controle de migrações.
+    - usuários;
+    - grupos;
+    - permissões;
+    - sessões;
+    - controle de migrações.
+
+
 ### 5. urls.py
 Esse arquivo define as URLs principais do projeto.
 
