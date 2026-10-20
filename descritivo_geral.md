@@ -36,10 +36,11 @@ python manage.py startapp filme
 Ele funciona como uma “central de controle” do projeto.
 
 
-runserver: inicia o servidor de desenvolvimento;
-migrate: aplica as alterações no banco;
-makemigrations: cria arquivos de migração a partir das alterações nos models;
-startapp: cria uma nova aplicação dentro do projeto.
+-    __runserver__: inicia o servidor de desenvolvimento;
+-    __migrate__: aplica as alterações no banco;
+-    __makemigrations__: cria arquivos de migração a partir das alterações nos models;
+-    __startapp__: cria uma nova aplicação dentro do projeto.
+
 Na prática, você passará bastante tempo utilizando esse arquivo pelo terminal.
 
 ### 2. Pasta interna do projeto
