@@ -115,8 +115,6 @@ Esse arquivo define as URLs principais do projeto.
 
 Inicialmente, ele costuma conter uma rota para o painel administrativo:
 
-python
-
 ```python
 from django.contrib import admin
 from django.urls import path
@@ -157,7 +155,6 @@ Assim como o asgi.py, normalmente você não precisa modificá-lo durante a cria
 E o banco de dados?
 Depois da criação inicial, quando você executa:
 
-bash
 
 ```bash
 python manage.py migrate
