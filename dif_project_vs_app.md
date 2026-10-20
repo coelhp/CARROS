@@ -30,9 +30,7 @@ Essa é uma app vazia, ou seja, ela ainda não possui as regras específicas do 
 O passo mais importante: registrar a app
 Depois de criar a app, ela ainda não está sendo utilizada pelo projeto. É necessário adicioná-la no INSTALLED_APPS, dentro do settings.py do projeto:
 
-python
-
-Copiar
+```python
 INSTALLED_APPS = [
     "django.contrib.admin",
     "django.contrib.auth",
@@ -40,84 +38,84 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-
     "cars",
 ]
+```
+
 Essa é exatamente a ideia apresentada nas aulas: criar a app não significa automaticamente que o projeto já está usando essa app.
 
 Uma analogia: criar a app é como comprar uma peça nova para o Fiat Marea 1999. A peça existe, mas ainda precisa ser instalada no carro para funcionar. Aqui é vida real.
 
 Estrutura da app
-__init__.py
+### __init__.py
 Indica que a pasta cars é um pacote Python.
 
 Normalmente, permanece vazio e você não precisa alterá-lo inicialmente.
 
-admin.py
+### admin.py
 É usado para registrar os models no painel administrativo do Django.
 
 Por exemplo, depois de criar um model Car em models.py, você poderá registrá-lo:
 
-python
+```python
 
 Copiar
 from django.contrib import admin
 from .models import Car
-
 admin.site.register(Car)
+```
+
 A partir daí, o model poderá aparecer no /admin/, desde que você também tenha um superusuário.
 
-apps.py
+### apps.py
 Contém a configuração da app.
 
 Normalmente, o Django cria algo parecido com:
 
-python
-
-Copiar
+```python
 from django.apps import AppConfig
-
 
 class CarsConfig(AppConfig):
     default_auto_field = "django.db.models.BigAutoField"
     name = "cars"
+```
+
 O atributo name informa o caminho da app.
 
 Em alguns casos, a app pode ser adicionada no settings.py usando a classe de configuração:
 
-python
-
-Copiar
+```python
 "cars.apps.CarsConfig",
 migrations/
+```
+
 Essa pasta armazena o histórico das alterações feitas nos models.
 
 Inicialmente, ela contém apenas:
 
-text
-
+```bash
 Copiar
 migrations/
 └── __init__.py
+```
+
 Depois que você cria ou altera um model e executa:
 
-bash
-
-Copiar
+```bash
 python manage.py makemigrations
-o Django cria arquivos de migration dentro dessa pasta.
+```
+
+O Django cria arquivos de migration dentro dessa pasta.
 
 Depois, você aplica as alterações ao banco com:
 
-bash
-
-Copiar
+```bash
 python manage.py migrate
+```
+
 O fluxo normalmente é:
 
-text
-
-Copiar
+```
 Alterar models.py
         ↓
 python manage.py makemigrations
@@ -126,65 +124,66 @@ python manage.py migrate
         ↓
 Alteração aplicada no banco
 models.py
+```
+
 É onde você define a estrutura dos dados da app.
 
 Por exemplo:
 
-python
-
-Copiar
+```python
 from django.db import models
-
 
 class Car(models.Model):
     brand = models.CharField(max_length=100)
     model = models.CharField(max_length=100)
     year = models.IntegerField()
+```
+
 Esse model representa uma tabela de carros no banco de dados.
 
 Depois de criá-lo, você precisa gerar e aplicar as migrations:
 
-bash
-
-Copiar
+```bash
 python manage.py makemigrations
 python manage.py migrate
 tests.py
+```
+
 É o arquivo destinado aos testes automatizados da app.
 
 Você pode testar, por exemplo:
 
-criação de registros;
-regras de negócio;
-respostas das views;
-comportamento de formulários;
-permissões de usuários.
+-    criação de registros;
+-    regras de negócio;
+-    respostas das views;
+-    comportamento de formulários;
+-    permissões de usuários.
+
 No começo, ele geralmente vem vazio ou com uma estrutura básica.
 
-views.py
+### views.py
 É onde ficam as views, que recebem requisições e retornam respostas.
 
 Um exemplo simples:
 
-python
-
-Copiar
+```python
 from django.http import HttpResponse
 
 
 def home(request):
     return HttpResponse("Página inicial de carros")
-Mas criar a view não basta. Você também precisa criar uma rota para ela ser acessada.
+```
 
+Mas criar a view não basta. Você também precisa criar uma rota para ela ser acessada.
 Geralmente, criamos um urls.py dentro da app:
 
-text
-
-Copiar
+```bash
 cars/
 ├── urls.py
 ├── views.py
 └── ...
+```
+
 E depois conectamos essas URLs no urls.py principal do projeto.
 
 Projeto x app
