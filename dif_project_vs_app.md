@@ -58,8 +58,6 @@ Normalmente, permanece vazio e você não precisa alterá-lo inicialmente.
 Por exemplo, depois de criar um model Car em models.py, você poderá registrá-lo:
 
 ```python
-
-Copiar
 from django.contrib import admin
 from .models import Car
 admin.site.register(Car)
@@ -85,8 +83,7 @@ O atributo name informa o caminho da app.
 Em alguns casos, a app pode ser adicionada no settings.py usando a classe de configuração:
 
 ```python
-"cars.apps.CarsConfig",
-migrations/
+"cars.apps.CarsConfig", "migrations/"
 ```
 
 Essa pasta armazena o histórico das alterações feitas nos models.
@@ -94,7 +91,6 @@ Essa pasta armazena o histórico das alterações feitas nos models.
 Inicialmente, ela contém apenas:
 
 ```bash
-Copiar
 migrations/
 └── __init__.py
 ```
@@ -197,9 +193,7 @@ Possui o urls.py principal	Pode possuir seu próprio urls.py
 Coordena as apps	Trabalha em uma parte do sistema
 Por exemplo, em um sistema de carros:
 
-text
-
-Copiar
+```bash
 projeto/
 ├── manage.py
 ├── app/
@@ -215,36 +209,39 @@ projeto/
 │   ├── views.py
 │   └── migrations/
 └── db.sqlite3
+```
+
 Nesse exemplo:
 
-app é o coração e a configuração geral do projeto;
-cars é uma app funcional;
-settings.py precisa conhecer cars por meio do INSTALLED_APPS;
-cars/models.py define os dados relacionados aos carros;
-cars/views.py define o comportamento das páginas ou endpoints;
-cars/admin.py configura a administração desses dados.
-Um detalhe importante
+- app é o coração e a configuração geral do projeto;
+- cars é uma app funcional;
+- settings.py precisa conhecer cars por meio do INSTALLED_APPS;
+- cars/models.py define os dados relacionados aos carros;
+- cars/views.py define o comportamento das páginas ou endpoints;
+- cars/admin.py configura a administração desses dados.
+
+### Um detalhe importante
 Uma app não precisa representar necessariamente uma única tabela. Ela deve representar uma área de responsabilidade do sistema.
 
 Por exemplo:
 
-text
-
-Copiar
+```bash
 cars/
 brands/
 dealers/
 users/
+```
+
 Cada app pode cuidar de um domínio diferente. Essa organização ajuda a evitar que todo o código fique misturado em uma única pasta.
 
 Portanto, o fluxo inicial é:
 
 Criar a app:
 
-bash
-
-Copiar
+```bash
 python manage.py startapp cars
+```
+
 Adicioná-la ao INSTALLED_APPS.
 
 Criar os models, views e demais funcionalidades.
