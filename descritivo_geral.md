@@ -1,7 +1,7 @@
 # Descritivo Geral: 
 ## Estrutura Inicial do Projeto Django
 
-Quando você executa o comando startproject, o Django cria uma estrutura inicial pronta para começar o desenvolvimento. A ideia é que você não precise configurar tudo do zero — o framework já traz várias facilidades, como usuários, sessões, grupos e permissões.
+Quando você executa o comando startproject, o Django cria uma estrutura inicial pronta para começar o desenvolvimento. A ideia é que você não precise configurar tudo do zero, o framework já traz várias facilidades, como usuários, sessões, grupos e permissões.
 
 Antes de olhar arquivo por arquivo, pense assim:
 
