@@ -1,4 +1,4 @@
-Patrick, o comando makemigrations é responsável por transformar as alterações feitas nos seus models em arquivos de migração.
+O comando makemigrations é responsável por transformar as alterações feitas nos seus models em arquivos de migração.
 
 Antes de continuar, pense nesta pergunta:
 
