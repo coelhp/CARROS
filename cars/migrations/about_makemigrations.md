@@ -47,10 +47,12 @@ Depois de executar:
 
 ```bash
 python manage.py makemigrations
-o Django poderá criar um arquivo semelhante a:
 ```
 
-```
+O Django poderá criar um arquivo semelhante a:
+
+
+```text
 cars/
 └── migrations/
     ├── __init__.py
@@ -66,7 +68,7 @@ Ele apenas cria o arquivo que descreve a alteração.
 
 O fluxo completo possui duas etapas:
 
-```
+```text
 models.py
    ↓
 python manage.py makemigrations
@@ -113,36 +115,38 @@ python manage.py migrate
 Onde o arquivo é criado?
 O arquivo de migration é criado dentro da pasta migrations da app correspondente:
 
-text
-
-Copiar
+```text
 cars/
 ├── models.py
 └── migrations/
     ├── __init__.py
     └── 0001_initial.py
+```
+
 Se você fizer uma nova alteração posteriormente, o Django criará outro arquivo:
 
-text
-
-Copiar
+```text
 migrations/
 ├── __init__.py
 ├── 0001_initial.py
 └── 0002_car_year.py
+```
+
 Esses arquivos formam um histórico das mudanças realizadas na estrutura do banco.
 
 Resumo
-Comando	Função
-python manage.py makemigrations	Cria arquivos de migração com base nas alterações dos models
-python manage.py migrate	Aplica as migrações no banco de dados
+|Comando	|Função|
+|----|----|
+|python manage.py makemigrations|	Cria arquivos de migração com base nas alterações dos models|
+|python manage.py migrate	|Aplica as migrações no banco de dados|
+
 A sequência mais importante para memorizar é:
 
-bash
-
-Copiar
+```bash
 python manage.py makemigrations
 python manage.py migrate
+```
+
 O primeiro comando prepara a alteração. O segundo comando executa a alteração.
 
 No próximo passo, vale estudar o comando migrate, porque os dois trabalham juntos e serão usados constantemente durante o desenvolvimento de projetos Django.
