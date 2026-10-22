@@ -1,6 +1,8 @@
-O comando makemigrations é responsável por transformar as alterações feitas nos seus models em arquivos de migração.
+# Makemigrations
 
-Antes de continuar, pense nesta pergunta:
+## O comando makemigrations é responsável por transformar as alterações feitas nos seus models em arquivos de migração.
+
+Pense nesta pergunta:
 
 Se eu crio uma classe no models.py, a tabela aparece automaticamente no banco de dados?
 
@@ -9,10 +11,10 @@ Não. O Django precisa primeiro registrar o que mudou e depois aplicar essa muda
 O comando
 No terminal, dentro da pasta que contém o manage.py, executamos:
 
-bash
-
-Copiar
+```bash
 python manage.py makemigrations
+```
+
 O que ele faz?
 De acordo com a aula, o Django:
 
@@ -23,22 +25,23 @@ Compara o estado atual dos models com as migrações existentes;
 Cria novos arquivos dentro da pasta migrations quando identifica alterações.
 As migrations são arquivos Python que descrevem operações para o banco de dados, como:
 
-criar uma tabela;
-adicionar uma coluna;
-alterar um campo;
-remover uma tabela;
-criar ou remover relacionamentos.
+* criar uma tabela;
+* adicionar uma coluna;
+* alterar um campo;
+* remover uma tabela;
+* criar ou remover relacionamentos.
+
 Por exemplo, suponha este model:
 
-python
-
-Copiar
+```python
 from django.db import models
 
 
 class Car(models.Model):
     brand = models.CharField(max_length=100)
     model = models.CharField(max_length=100)
+```
+
 Depois de executar:
 
 bash
