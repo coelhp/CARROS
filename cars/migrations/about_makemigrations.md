@@ -18,11 +18,12 @@ python manage.py makemigrations
 O que ele faz?
 De acordo com a aula, o Django:
 
-Varre o projeto;
-Analisa as apps instaladas;
-Verifica os models;
-Compara o estado atual dos models com as migrações existentes;
-Cria novos arquivos dentro da pasta migrations quando identifica alterações.
+* Varre o projeto;
+* Analisa as apps instaladas;
+* Verifica os models;
+* Compara o estado atual dos models com as migrações existentes;
+* Cria novos arquivos dentro da pasta migrations quando identifica alterações.
+
 As migrations são arquivos Python que descrevem operações para o banco de dados, como:
 
 * criar uma tabela;
@@ -44,19 +45,18 @@ class Car(models.Model):
 
 Depois de executar:
 
-bash
-
-Copiar
+```bash
 python manage.py makemigrations
 o Django poderá criar um arquivo semelhante a:
+```
 
-text
-
-Copiar
+```
 cars/
 └── migrations/
     ├── __init__.py
     └── 0001_initial.py
+```
+
 Esse arquivo contém instruções que representam a criação da tabela correspondente ao model Car.
 
 O que o makemigrations não faz?
@@ -66,9 +66,7 @@ Ele apenas cria o arquivo que descreve a alteração.
 
 O fluxo completo possui duas etapas:
 
-text
-
-Copiar
+```
 models.py
    ↓
 python manage.py makemigrations
@@ -78,10 +76,13 @@ arquivo de migration criado
 python manage.py migrate
    ↓
 alteração aplicada no banco de dados
+```
+
 Portanto:
 
-makemigrations: cria o plano da alteração;
-migrate: executa esse plano no banco.
+- makemigrations: cria o plano da alteração;
+- migrate: executa esse plano no banco.
+
 Uma analogia: o makemigrations é como o mecânico preparar uma ordem de serviço para modificar o Fiat Marea 1999. A ordem descreve o que precisa ser feito, mas o carro só muda quando o serviço é executado. Aqui é vida real.
 
 Quando usar?
@@ -90,24 +91,25 @@ Você deve executar o makemigrations depois de criar ou alterar um model.
 Exemplo:
 
 python
-
-Copiar
+```
 class Car(models.Model):
     brand = models.CharField(max_length=100)
     model = models.CharField(max_length=100)
     year = models.IntegerField()
+```
+
 Depois:
 
-bash
-
-Copiar
+```bash
 python manage.py makemigrations
+```
+
 E, para aplicar no banco:
 
-bash
-
-Copiar
+```bash
 python manage.py migrate
+```
+
 Onde o arquivo é criado?
 O arquivo de migration é criado dentro da pasta migrations da app correspondente:
 
