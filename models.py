@@ -6,7 +6,7 @@ class Car(models.Model):
     brand = models.CharField(max_length=200)
     factory_year = models.IntegerField()
     model_year = models.IntegerField()
-    price = models.DecimalField(max_digits=10, decimal_places=2)
+    value = models.FloatField()
 
     def __str__(self):
         return f"{self.id} {self.model} {self.year}"
