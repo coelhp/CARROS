@@ -4,7 +4,8 @@ class Car(models.Model):
     id = models.AutoField(primary_key=True)
     model = models.CharField(max_length=200)
     brand = models.CharField(max_length=200)
-    year = models.PositiveIntegerField()
+    factory_year = models.IntegerField()
+    model_year = models.IntegerField()
     price = models.DecimalField(max_digits=10, decimal_places=2)
 
     def __str__(self):
