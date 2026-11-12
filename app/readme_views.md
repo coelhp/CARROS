@@ -233,6 +233,6 @@ Model / Banco de dados
 Template HTML ou resposta JSON
 ```
 
-Uma analogia: a URL é o endereço da oficina, a view é o mecânico que entende o problema, consulta as peças e decide o serviço, o model representa as peças e o banco é o estoque. O template é a forma organizada de apresentar o resultado ao cliente. Se misturar tudo no mesmo lugar, vira manutenção de Fiat Marea 1999 sem manual — aqui é vida real. 😄
+Uma analogia: a URL é o endereço da oficina, a view é o mecânico que entende o problema, consulta as peças e decide o serviço, o model representa as peças e o banco é o estoque. O template é a forma organizada de apresentar o resultado ao cliente. Se misturar tudo no mesmo lugar, vira manutenção de Fiat Marea 1999 sem manual, aqui é vida real. 😄
 
 O próximo passo recomendado é estudar uma view simples que lista objetos do banco e depois observar como a mesma funcionalidade pode ser escrita com uma class-based view.
