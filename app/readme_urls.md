@@ -166,10 +166,9 @@ O nome permite referenciar a URL sem escrever o caminho manualmente em outros lo
 
 Por exemplo, em um template:
 
-html
-
-Copiar
+```html
 <a href="{% url 'inflows' %}">Ver entradas</a>
+```
 Se futuramente você alterar o caminho de entradas/ para outro endereço, poderá manter as referências baseadas no nome, reduzindo a necessidade de modificar vários arquivos.
 
 Atenção à barra final
