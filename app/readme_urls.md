@@ -90,7 +90,7 @@ Uma resposta é devolvida ao usuário
 
 É importante perceber que o urls.py não costuma conter a regra completa da página. Ele apenas faz o encaminhamento. A lógica fica na view.
 
-URLs do projeto e URLs da app
+## URLs do projeto e URLs da app
 Em projetos maiores, não é recomendado colocar todas as rotas diretamente no urls.py principal. Cada app pode ter seu próprio arquivo urls.py.
 
 Por exemplo:
@@ -104,7 +104,7 @@ projeto/
     └── views.py
 ```
 
-URLs da app
+## URLs da app
 Dentro da app inventory, você pode criar:
 
 ```python
@@ -119,10 +119,11 @@ urlpatterns = [
 ```
 Aqui a app define suas próprias rotas:
 
-página inicial do estoque;
-entradas;
-saídas.
-Incluindo as URLs da app no projeto
+- página inicial do estoque;
+- entradas;
+- saídas.
+
+## Incluindo as URLs da app no projeto
 Depois, o urls.py principal conecta as rotas da app:
 
 ```python
@@ -147,7 +148,7 @@ o urls.py do projeto define o prefixo /estoque/;
 o urls.py da app define o restante da rota.
 A aula sobre registro de saídas mostra justamente essa organização: depois de criar as URLs de Outflows, é necessário adicioná-las ao app ou às rotas principais do projeto para que elas realmente possam ser acessadas.
 
-Por que usar include()?
+## Por que usar include()?
 O include() permite delegar parte das rotas para uma app específica:
 
 ```python
@@ -157,7 +158,7 @@ Isso deixa o projeto organizado. O arquivo principal não precisa conhecer todos
 
 Uma analogia: o urls.py principal é como a recepção de uma empresa. Ele identifica que o visitante deseja falar com o setor de estoque e encaminha para esse setor. A recepção não precisa executar o trabalho do estoque — apenas direcionar corretamente. Bem melhor do que colocar todas as peças do Fiat Marea 1999 no mesmo lugar e depois tentar descobrir o que é motor, suspensão e ar-condicionado. Aqui é vida real.
 
-O parâmetro name
+## O parâmetro name
 É uma boa prática nomear as rotas:
 
 ```python
@@ -172,7 +173,7 @@ Por exemplo, em um template:
 ```
 Se futuramente você alterar o caminho de entradas/ para outro endereço, poderá manter as referências baseadas no nome, reduzindo a necessidade de modificar vários arquivos.
 
-Atenção à barra final
+## Atenção à barra final:
 Estas duas rotas são diferentes:
 
 ```python
@@ -196,7 +197,7 @@ path("entradas/", views.inflows)
 ```
 O mais importante é manter um padrão no projeto.
 
-Resumindo
+## Resumindo
 As URLs:
 
 representam as rotas do sistema;
@@ -221,4 +222,4 @@ O Django devolve uma resposta
 ```
 O próximo passo é entender com mais profundidade as views, porque URLs e views trabalham juntas: a URL encaminha e a view decide o que será feito. Obtive essa explicação utilizando MentorIA da PycodeBR. 
 
-#Gratidão!!!!!
+# Gratidão!!!!!
