@@ -149,10 +149,9 @@ A aula sobre registro de saídas mostra justamente essa organização: depois de
 Por que usar include()?
 O include() permite delegar parte das rotas para uma app específica:
 
-python
-
-Copiar
+```python
 path("estoque/", include("inventory.urls"))
+```
 Isso deixa o projeto organizado. O arquivo principal não precisa conhecer todos os detalhes internos da app.
 
 Uma analogia: o urls.py principal é como a recepção de uma empresa. Ele identifica que o visitante deseja falar com o setor de estoque e encaminha para esse setor. A recepção não precisa executar o trabalho do estoque — apenas direcionar corretamente. Bem melhor do que colocar todas as peças do Fiat Marea 1999 no mesmo lugar e depois tentar descobrir o que é motor, suspensão e ar-condicionado. Aqui é vida real.
@@ -160,10 +159,9 @@ Uma analogia: o urls.py principal é como a recepção de uma empresa. Ele ident
 O parâmetro name
 É uma boa prática nomear as rotas:
 
-python
-
-Copiar
+```python
 path("entradas/", views.inflows, name="inflows")
+```
 O nome permite referenciar a URL sem escrever o caminho manualmente em outros locais do projeto.
 
 Por exemplo, em um template:
