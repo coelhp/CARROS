@@ -174,29 +174,25 @@ Se futuramente você alterar o caminho de entradas/ para outro endereço, poder�
 Atenção à barra final
 Estas duas rotas são diferentes:
 
-python
-
-Copiar
+```python
 path("entradas/", views.inflows)
 path("entradas", views.inflows)
+```
 A primeira espera:
 
-text
-
-Copiar
+```text
 /entradas/
+```
 A segunda espera:
 
-text
-
-Copiar
+```text
 /entradas
+```
 No Django, é comum utilizar a barra final nas rotas:
 
-python
-
-Copiar
+```python
 path("entradas/", views.inflows)
+```
 O mais importante é manter um padrão no projeto.
 
 Resumindo
@@ -211,9 +207,7 @@ devem receber nomes com name;
 organizam a navegação do sistema.
 O fluxo principal é:
 
-text
-
-Copiar
+```text
 Usuário acessa uma URL
         ↓
 urls.py identifica a rota
@@ -223,4 +217,5 @@ A rota chama uma view
 A view processa a requisição
         ↓
 O Django devolve uma resposta
+```
 O próximo passo é entender com mais profundidade as views, porque URLs e views trabalham juntas: a URL encaminha e a view decide o que será feito. E pode ficar tranquilo: até aqui o Django está sendo bem mais organizado do que um projeto sem padrão — no máximo, essa explicação foi mediana, respeitando a regra dos alunos. 😄
