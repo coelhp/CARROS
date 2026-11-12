@@ -56,29 +56,26 @@ Nesse caso:
 Ligação entre URL e view
 Uma URL normalmente aponta para uma view:
 
-python
-
-Copiar
+```python
 path("sobre/", views.about)
+```
 Essa linha pode ser interpretada assim:
 
 Quando o usuário acessar /sobre/, execute a view about.
 
 A view poderia ser:
 
-python
-
-Copiar
+```python
 from django.http import HttpResponse
 
 
 def about(request):
     return HttpResponse("Página sobre o sistema")
+```
+
 Então o fluxo é:
 
-text
-
-Copiar
+```text
 Usuário acessa /sobre/
         ↓
 Django procura essa rota em urls.py
@@ -88,6 +85,8 @@ Django encontra views.about
 A função about é executada
         ↓
 Uma resposta é devolvida ao usuário
+```
+
 É importante perceber que o urls.py não costuma conter a regra completa da página. Ele apenas faz o encaminhamento. A lógica fica na view.
 
 URLs do projeto e URLs da app
