@@ -9,10 +9,9 @@ a view é o local que recebe o usuário;
 a resposta é a página ou informação entregue.
 Por exemplo:
 
-text
-
-Copiar
+```text
 http://localhost:8000/estoque/
+```
 Essa URL pode direcionar o usuário para uma página de estoque. Já:
 
 text
