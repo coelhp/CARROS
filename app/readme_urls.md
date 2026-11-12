@@ -14,10 +14,10 @@ http://localhost:8000/estoque/
 ```
 Essa URL pode direcionar o usuário para uma página de estoque. Já:
 
-text
-
-Copiar
+```text
 http://localhost:8000/entradas/
+```
+
 pode mostrar os registros de entradas.
 
 Como explicado na aula “Entendendo URLs e Views”, cada rota pode apresentar uma página diferente ou produzir um resultado diferente para o usuário.
@@ -25,9 +25,7 @@ Como explicado na aula “Entendendo URLs e Views”, cada rota pode apresentar 
 Onde ficam as URLs?
 O Django normalmente possui um arquivo urls.py principal dentro da pasta do projeto:
 
-text
-
-Copiar
+```text
 projeto/
 ├── manage.py
 └── projeto/
@@ -35,6 +33,8 @@ projeto/
     ├── urls.py
     ├── asgi.py
     └── wsgi.py
+```
+
 Esse arquivo é o ponto central das rotas do projeto. É o coração que recebe as URLs e encaminha cada uma para o local correto.
 
 Um exemplo:
