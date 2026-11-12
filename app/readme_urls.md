@@ -4,9 +4,9 @@ URLs são as rotas do sistema. Elas definem o que deve acontecer quando o usuár
 
 Pense no site como uma cidade:
 
-a URL é o endereço;
-a view é o local que recebe o usuário;
-a resposta é a página ou informação entregue.
+- a URL é o endereço;
+- a view é o local que recebe o usuário;
+- a resposta é a página ou informação entregue.
 Por exemplo:
 
 ```text
@@ -22,7 +22,7 @@ pode mostrar os registros de entradas.
 
 Como explicado na aula “Entendendo URLs e Views”, cada rota pode apresentar uma página diferente ou produzir um resultado diferente para o usuário.
 
-Onde ficam as URLs?
+## Onde ficam as URLs?
 O Django normalmente possui um arquivo urls.py principal dentro da pasta do projeto:
 
 ```text
@@ -51,9 +51,10 @@ urlpatterns = [
 ```
 Nesse caso:
 
-/admin/ direciona para o painel administrativo;
-/ direciona para a função home, dentro de core/views.py.
-Ligação entre URL e view
+- /admin/ direciona para o painel administrativo;
+- / direciona para a função home, dentro de core/views.py.
+
+## Ligação entre URL e view
 Uma URL normalmente aponta para uma view:
 
 ```python
@@ -218,4 +219,6 @@ A view processa a requisição
         ↓
 O Django devolve uma resposta
 ```
-O próximo passo é entender com mais profundidade as views, porque URLs e views trabalham juntas: a URL encaminha e a view decide o que será feito. E pode ficar tranquilo: até aqui o Django está sendo bem mais organizado do que um projeto sem padrão — no máximo, essa explicação foi mediana, respeitando a regra dos alunos. 😄
+O próximo passo é entender com mais profundidade as views, porque URLs e views trabalham juntas: a URL encaminha e a view decide o que será feito. Obtive essa explicação utilizando MentorIA da PycodeBR. 
+
+#Gratidão!!!!!
