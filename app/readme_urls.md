@@ -51,8 +51,8 @@ urlpatterns = [
 ```
 Nesse caso:
 
-- /admin/ direciona para o painel administrativo;
-- / direciona para a função home, dentro de core/views.py.
+- `/admin/` direciona para o painel administrativo;
+- `/` direciona para a função home, dentro de `core/views.py`.
 
 ## Ligação entre URL e view
 Uma URL normalmente aponta para uma view:
@@ -144,12 +144,13 @@ Agora o resultado final fica:
 ```
 Observe o papel de cada arquivo:
 
-o urls.py do projeto define o prefixo /estoque/;
-o urls.py da app define o restante da rota.
+- o urls.py do projeto define o prefixo `/estoque/`;
+- o `urls.py` da app define o restante da rota.
+
 A aula sobre registro de saídas mostra justamente essa organização: depois de criar as URLs de Outflows, é necessário adicioná-las ao app ou às rotas principais do projeto para que elas realmente possam ser acessadas.
 
 ## Por que usar include()?
-O include() permite delegar parte das rotas para uma app específica:
+O `include()` permite delegar parte das rotas para uma app específica:
 
 ```python
 path("estoque/", include("inventory.urls"))
@@ -171,7 +172,7 @@ Por exemplo, em um template:
 ```html
 <a href="{% url 'inflows' %}">Ver entradas</a>
 ```
-Se futuramente você alterar o caminho de entradas/ para outro endereço, poderá manter as referências baseadas no nome, reduzindo a necessidade de modificar vários arquivos.
+Se futuramente você alterar o caminho de `entradas/` para outro endereço, poderá manter as referências baseadas no nome, reduzindo a necessidade de modificar vários arquivos.
 
 ## Atenção à barra final:
 Estas duas rotas são diferentes:
@@ -200,13 +201,14 @@ O mais importante é manter um padrão no projeto.
 ## Resumindo
 As URLs:
 
-representam as rotas do sistema;
-definem os endereços acessados pelo usuário;
-encaminham requisições para views;
-podem ficar no projeto ou em uma app;
-podem ser conectadas usando include();
-devem receber nomes com name;
-organizam a navegação do sistema.
+- representam as rotas do sistema;
+- definem os endereços acessados pelo usuário;
+- encaminham requisições para views;
+- podem ficar no projeto ou em uma app;
+- podem ser conectadas usando include();
+- devem receber nomes com name;
+- organizam a navegação do sistema.
+  
 O fluxo principal é:
 
 ```text
