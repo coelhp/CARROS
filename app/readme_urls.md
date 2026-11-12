@@ -124,9 +124,7 @@ saídas.
 Incluindo as URLs da app no projeto
 Depois, o urls.py principal conecta as rotas da app:
 
-python
-
-Copiar
+```python
 from django.contrib import admin
 from django.urls import include, path
 
@@ -134,14 +132,14 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("estoque/", include("inventory.urls")),
 ]
+```
 Agora o resultado final fica:
 
-text
-
-Copiar
+```text
 /estoque/
 /estoque/entradas/
 /estoque/saidas/
+```
 Observe o papel de cada arquivo:
 
 o urls.py do projeto define o prefixo /estoque/;
