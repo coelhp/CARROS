@@ -94,21 +94,19 @@ Em projetos maiores, não é recomendado colocar todas as rotas diretamente no u
 
 Por exemplo:
 
-text
-
-Copiar
+```text
 projeto/
 ├── projeto/
 │   └── urls.py
 └── inventory/
     ├── urls.py
     └── views.py
+```
+
 URLs da app
 Dentro da app inventory, você pode criar:
 
-python
-
-Copiar
+```python
 from django.urls import path
 from . import views
 
@@ -117,6 +115,7 @@ urlpatterns = [
     path("entradas/", views.inflows, name="inflows"),
     path("saidas/", views.outflows, name="outflows"),
 ]
+```
 Aqui a app define suas próprias rotas:
 
 página inicial do estoque;
