@@ -52,7 +52,7 @@ urlpatterns = [
 Nesse caso:
 
 - `/admin/` direciona para o painel administrativo;
-- `/` direciona para a função home, dentro de `core/views.py`.
+- `/` direciona para a função `home`, dentro de `core/views.py`.
 
 ## Ligação entre URL e view
 Uma URL normalmente aponta para uma view:
