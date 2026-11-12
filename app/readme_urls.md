@@ -39,9 +39,7 @@ Esse arquivo é o ponto central das rotas do projeto. É o coração que recebe 
 
 Um exemplo:
 
-python
-
-Copiar
+```python
 from django.contrib import admin
 from django.urls import path
 from core import views
@@ -50,6 +48,7 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("", views.home),
 ]
+```
 Nesse caso:
 
 /admin/ direciona para o painel administrativo;
