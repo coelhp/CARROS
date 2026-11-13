@@ -2,8 +2,9 @@
     <head>
         <title>Car View</title>
     </head>
-    <body>
-        <h1>Car View</h1>
-            <h3>Teste de visibilidade PYCODE</h3>
+    {% block content%}
+        <body>
+            <h3>Carro 1:  {{ cars.model }}</h3>
         </body>
+    {% endblock content%}
 </html>        
