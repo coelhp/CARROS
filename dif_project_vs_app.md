@@ -46,7 +46,7 @@ Essa é exatamente a ideia apresentada nas aulas: criar a app não significa aut
 
 Uma analogia: criar a app é como comprar uma peça nova para o Fiat Marea 1999. A peça existe, mas ainda precisa ser instalada no carro para funcionar. Aqui é vida real.
 
-Estrutura da app
+## Estrutura da app
 ### __init__.py
 Indica que a pasta cars é um pacote Python.
 
@@ -182,7 +182,7 @@ cars/
 
 E depois conectamos essas URLs no urls.py principal do projeto.
 
-Projeto x app
+## Projeto x app
 A diferença principal pode ser resumida assim:
 
 Projeto	App
@@ -242,12 +242,9 @@ Criar a app:
 python manage.py startapp cars
 ```
 
-Adicioná-la ao INSTALLED_APPS.
-
-Criar os models, views e demais funcionalidades.
-
-Criar migrations quando houver alterações nos models.
-
-Conectar as URLs da app ao projeto.
+- Adicioná-la ao INSTALLED_APPS.
+- Criar os models, views e demais funcionalidades.
+- Criar migrations quando houver alterações nos models.
+- Conectar as URLs da app ao projeto.
 
 A ideia apresentada nas aulas é justamente essa: o Django cria a estrutura padrão da app, mas é você quem vai transformar essa app vazia em uma parte funcional do sistema.
