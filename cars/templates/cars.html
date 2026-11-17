@@ -5,8 +5,8 @@
     {% block content%}
         <body>
             {% for car in cars %}
-                <h3>Carro {{ forloop.counter }}:  {{ car.model }}</h3>
+                <h3>Carro {{ forloop.counter }}:  {{ car.brand }} - {{ car.model }} / {{ car.factory_year }}</h3>
             {% endfor %}
         </body>
     {% endblock content%}
-</html>     
+</html>        
